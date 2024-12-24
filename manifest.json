@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Video Speed Controller",
+  "version": "1.0",
+  "description": "Control HTML5 video playback speed and enable buttons",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
